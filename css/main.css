@@ -1,0 +1,87 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'merriweather', serif;
+}
+
+header{
+    background-image: url(../images/bg-intro.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    background-position: center;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+}
+
+#logo{
+    width: 430px;
+    height: 200px;
+    padding: 8px;
+    border: 2px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    z-index: 1;
+}
+
+nav{
+    margin-left: 40px;
+    flex: 60%; 
+    padding: 10px;
+}
+
+nav >a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    padding: 9px 16px;
+    margin: 10px;
+    background-color: orangered;
+    display: inline-block
+}
+
+li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 400px;
+    text-align: center;
+    display: block;
+    margin: 8px 8px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.main-info{
+   flex: 20%;
+   flex-wrap: wrap;
+   font-family: "myriad-pro-condensed", sans-serif;
+   font-size: 12px;
+   font-weight: 700;
+   color: white;
+   line-height: 20px;
+   margin-left: 16px;
+}
+
+a.scroll-arrow{
+    text-decoration: none;
+    display: block;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    z-index: 2;
+}
