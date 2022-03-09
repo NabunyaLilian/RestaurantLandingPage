@@ -1,6 +1,7 @@
 body{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
     font-family: 'merriweather', serif;
 }
 
@@ -8,9 +9,10 @@ header{
     background-image: url(../images/bg-intro.jpg);
     background-attachment: fixed;
     background-size: cover;
-    height: 600px;
+    height: 700px;
     position: relative;
     background-position: center;
+    margin-bottom: 0px;
 }
 
 .navbar{
@@ -26,7 +28,7 @@ header{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 120px;
     z-index: 1;
 }
 
@@ -81,7 +83,196 @@ a.scroll-arrow{
     width: 43px;
     height: 43px;
     position: absolute;
-    left: 50%;
+    left: 49%;
     bottom: 50px;
     z-index: 2;
 }
+
+.main{
+    background-image: url(../images/homepage-2-2_02.jpg);
+    background-size: cover;
+    position: relative;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-family: "Inter", serif;
+    font-size: 30px;
+}
+
+.main-message{
+    width: 600px;
+    height: 200px;
+    border: 2px solid #b6915f;
+    padding: 0px 20px ;
+    text-align: center;
+    line-height: 1.7rem;
+    font-family: "myriad-pro-condensed", sans-serif;
+}
+
+.sub-message{
+    display: block;
+    width: 600px;
+    height: 100px;
+    text-align: center;
+    line-height: 1.7rem;
+    font-family: "myriad-pro-condensed", sans-serif;
+}
+
+.signature{
+    margin-left: 450px;
+
+}
+
+.quote-section{
+    background-image: url(../images/bg-four.jpg);
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-family: "myriad-pro-condensed", sans-serif;
+    line-height: 1.7rem;
+}
+
+.quote{
+    border: 2px solid white;
+    padding: 60px;
+    margin: auto;
+    width: 1000px;
+    height: 350px;
+    font-size: 20px;
+}
+
+.offer-section{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/bg-five.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+    align-items: center;
+}
+
+.offer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.menu{
+    display: flex;
+    flex-direction:column;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 30px;
+}
+
+p{
+    line-height: 1.7rem;
+    font-family: "myriad-pro-condensed", sans-serif; 
+}
+
+.download-btn{
+    display: block;
+    width: 300px;
+    height: 40px;
+    border: 3px solid black;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    line-height: 0;
+    margin-top: 30px;
+    font-family: 'merriweather', serif;
+}
+
+.food-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/bg-body.jpg);
+    background-size: cover;
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+}
+
+.grid-container > img{
+    width: 300px; 
+    height: 1000px;
+}
+
+.instagram-btn{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 40px;
+    background-color: #C4986B;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+footer{
+    background-color: #050706;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact-container > div{
+    padding: 0px 70px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div > h3{
+    font-family: Helvetica, sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: #CEC9C5;
+}
+
+.contact > p{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-section{
+    display: flex;
+    align-content: center;
+}
+
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+

@@ -1,4 +1,4 @@
-# Food Template Design - A landing page for restaurant
+# HTML Template Design - A landing page for restaurant
 
 
 ## Vision
