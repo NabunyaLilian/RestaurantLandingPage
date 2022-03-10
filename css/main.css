@@ -7,12 +7,13 @@ body{
 
 header{
     background-image: url(../images/bg-intro.jpg);
-    background-attachment: fixed;
     background-size: cover;
     height: 700px;
     position: relative;
     background-position: center;
     margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar{
@@ -105,7 +106,7 @@ h1{
 
 .main-message{
     width: 600px;
-    height: 200px;
+    height: auto;
     border: 2px solid #b6915f;
     padding: 0px 20px ;
     text-align: center;
@@ -208,9 +209,9 @@ p{
     gap: 10px;
 }
 
-.grid-container > img{
+.grid-item > img{
     width: 300px; 
-    height: 1000px;
+    height: 300px;
 }
 
 .instagram-btn{
@@ -222,6 +223,7 @@ p{
     border-radius: 10px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     margin-top: 20px;
     margin-bottom: 100px;
     text-align: center;
@@ -234,6 +236,10 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.dash-line{
+    margin-top: 40px;
 }
 
 .contact-container{
@@ -274,5 +280,101 @@ div > h3{
     justify-content: center;
     align-items: center;
     margin-top: 90px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+           }
+
+    nav{
+        flex: 100%;
+        background: black;
+        margin-left: 0px;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .main{
+        background-position-x: 50% ;
+        background-position-y: 0%;
+        text-align: center;
+        height: auto;
+    }
+
+    .main-message{
+        width: 60%;
+        padding: 10px;
+        height: auto;
+    }
+
+    .sub-message{
+        width: 60%;
+    }
+    
+    .signature{
+        margin-left: 80px;
+        text-align: center;
+        display: block;
+        margin-top: 100px;
+    }
+
+    .quote-section{
+        background-position-x: 50% ;
+        background-position-y: 50% ;
+
+    }
+
+    .quote{
+        width: 60%;
+        height: auto;
+    }
+
+    .offer-section{
+        background-position-x: 50%;
+        background-position-y: 50% ; 
+        height: auto;
+    }
+
+    .offer{
+        flex-direction: column;
+        padding-bottom: 100px;
+    }
+
+    .download-btn{
+        margin-bottom: 500px;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto ;
+        gap: 10px;
+    }
+
+    .grid-item >img {
+        width: 200px; 
+        height: 200px;
+    }
+
+    .dash-line > img{
+       width: 80%;
+       display: block;
+       margin: auto;
+       height: 12px;
+       background-repeat: repeat-x;
+    }
+
+    .contact-container{
+        flex-direction: column;
+    }
+
+    .contact{
+        margin-top: 0px;
+    }
+    
 }
 
