@@ -13,12 +13,16 @@ header{
     background-position: center;
     margin-bottom: 0px;
     display: flex;
+    width: 100%;
     flex-direction: column;
 }
 
 .navbar{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    margin-left: 0px;
+    align-items: center;
 }
 
 #logo{
@@ -34,8 +38,6 @@ header{
 }
 
 nav{
-    margin-left: 40px;
-    flex: 60%; 
     padding: 10px;
 }
 
@@ -45,8 +47,8 @@ nav >a{
     font-size: 12px;
     font-weight: 700;
     color: white;
-    padding: 9px 16px;
-    margin: 10px;
+    padding: 9px 10px;
+    margin: 2px;
     background-color: orangered;
     display: inline-block
 }
@@ -68,14 +70,10 @@ ul{
 }
 
 .main-info{
-   flex: 20%;
-   flex-wrap: wrap;
    font-family: "myriad-pro-condensed", sans-serif;
-   font-size: 12px;
+   font-size: 10px;
    font-weight: 700;
    color: white;
-   line-height: 20px;
-   margin-left: 16px;
 }
 
 a.scroll-arrow{
@@ -102,6 +100,8 @@ a.scroll-arrow{
 h1{
     font-family: "Inter", serif;
     font-size: 30px;
+    padding: 10px;
+    text-align: center;
 }
 
 .main-message{
@@ -144,7 +144,7 @@ h1{
     border: 2px solid white;
     padding: 60px;
     margin: auto;
-    width: 1000px;
+    width: 80%;
     height: 350px;
     font-size: 20px;
 }
@@ -155,13 +155,16 @@ h1{
     background-image: url(../images/bg-five.jpg);
     background-size: cover;
     width: 100%;
-    height: 1000px;
+    background-position-x: 50%;
+    background-position-y: 50% ;
+    height: 900px;
     align-items: center;
 }
 
 .offer{
     display: flex;
     flex-direction: row;
+    width: 100%;
     justify-content: space-evenly;
     
 }
@@ -200,18 +203,21 @@ p{
     align-items: center;
     background-image: url(../images/bg-body.jpg);
     background-size: cover;
+    justify-content: center;
 
 }
 
 .grid-container{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap: 10px;
+    gap: 5px;
+    width: 100%;
+    justify-content: center;
 }
 
 .grid-item > img{
-    width: 300px; 
-    height: 300px;
+    width: 200px; 
+    height: 200px;
 }
 
 .instagram-btn{
@@ -283,7 +289,8 @@ div > h3{
 }
 
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 768px) {
     .navbar{
         display: flex;
         flex-direction: column;
@@ -293,10 +300,12 @@ div > h3{
 
     nav{
         flex: 100%;
+        width: 95%;
+        padding: 20px;
         background: black;
-        margin-left: 0px;
         text-align: center;
         flex-wrap: wrap;
+        margin-bottom: 20px;
     }
 
     .main{
@@ -343,6 +352,8 @@ div > h3{
     .offer{
         flex-direction: column;
         padding-bottom: 100px;
+        align-items: center;
+        justify-content: center;
     }
 
     .download-btn{
@@ -351,17 +362,24 @@ div > h3{
 
     .grid-container{
         display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    /* .grid-container{
+        display: grid;
         grid-template-columns: auto auto ;
         gap: 10px;
-    }
+    } */
 
     .grid-item >img {
-        width: 200px; 
-        height: 200px;
+        width: 150px; 
+        height: 150px;
     }
-
+    .dash-line{
+        margin-left: 20px ;
+        margin-right: 20px;
+    }
     .dash-line > img{
-       width: 80%;
        display: block;
        margin: auto;
        height: 12px;
@@ -378,3 +396,127 @@ div > h3{
     
 }
 
+@media only screen and (max-width: 600px) {
+    body{
+        width: 100%;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+           }
+
+    nav{
+        flex: 100%;
+        width: 90%;
+        padding: 20px;
+        background: black;
+        text-align: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    #logo{
+        width: 300px;
+        height: 200px;
+        padding: 8px;
+        border: 2px solid black;
+        display: block;
+        margin-left: auto;
+        background-position-x: 50%;
+        background-position-y: 50% ;
+        margin-right: auto;
+        margin-top: 120px;
+        z-index: 1;
+    }
+
+    .main{
+        background-position-x: 50% ;
+        background-position-y: 0%;
+        text-align: center;
+        height: auto;
+    }
+
+    .main-message{
+        width: 60%;
+        padding: 10px;
+        height: auto;
+    }
+
+    .sub-message{
+        width: 60%;
+    }
+    
+    .signature{
+        text-align: center;
+        display: block;
+        margin-top: 180px;
+    }
+
+    .quote-section{
+        background-position-x: 50% ;
+        background-position-y: 50% ;
+        height: auto;
+    }
+
+    .quote{
+        width: 60%;
+        margin-top: 20px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .offer-section{
+        background-position-x: 50%;
+        background-position-y: 50% ; 
+        height: auto;
+    }
+
+    .offer{
+        flex-direction: column;
+        padding-bottom: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu{
+        justify-content: center;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .download-btn{
+        margin-bottom: 500px;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto ;
+        gap: 10px;
+    }
+
+    .grid-item >img {
+        width: 300px; 
+        height: 250px;
+    }
+    .dash-line{
+        margin-left: 20px ;
+        margin-right: 20px;
+    }
+    .dash-line > img{
+       display: block;
+       margin: auto;
+       height: 12px;
+       background-repeat: repeat-x;
+    }
+
+    .contact-container{
+        flex-direction: column;
+    }
+
+    .contact{
+        margin-top: 0px;
+    }
+    
+}
