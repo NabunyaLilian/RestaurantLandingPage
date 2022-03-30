@@ -1,0 +1,61 @@
+/* Desktop styles */
+
+.quote-section{
+    background-image: url(../images/bg-four.jpg);
+    background-size: cover;
+    background-position-y:50% ;
+    height: 670px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote{
+    font-family: 'merriweather', serif;
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+    padding: 80px 20px 20px 20px;
+    margin: auto;
+    width: 70%;
+    height: 60%;
+    font-size: 22px;
+    line-height: 35px;
+}
+
+
+
+/* Tablet styles */
+
+@media only screen and (max-width: 768px){
+    .quote-section{
+        background-position-x: 50% ;
+        background-position-y: 50% ;
+    }
+
+    .quote{
+        width: 60%;
+        height: auto;
+        padding: 20px 20px 20px 20px;
+    }
+}
+
+
+
+/* Mobile styles */
+
+@media only screen and (max-width: 600px){
+    .quote-section{
+        background-position-x: 50% ;
+        background-position-y: 50% ;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        height: auto;
+    }
+
+    .quote{
+        width: 50%;
+        height: auto;
+        padding: 10px;
+    }
+
+}

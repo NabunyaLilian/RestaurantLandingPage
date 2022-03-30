@@ -1,0 +1,100 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+nav >a{
+    font-family: "merriweather, serif";
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    display: inline-block;
+    padding: 9px 15px;
+    margin-right: 8px;
+    background-color: orangered;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+}
+
+li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 400px;
+    text-align: center;
+    font-family: 'myriad-pro-condensed', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    font-stretch: ultra-condensed;
+    line-height: 20px;
+    display: block;
+    margin: 8px 8px;
+}
+
+.icon__nav{
+    width: 20px;
+    height: 20px;
+}
+
+
+@media only screen and (max-width: 768px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 10px;
+        }
+
+    nav{
+        flex: 100%;
+        width: 100%;
+        padding: 20px;
+        background: black;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        }
+
+    nav{
+        flex: 100%;
+        width: 100%;
+        background: black;
+        text-align: center;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    nav >a{
+        margin-top: 8px;
+        margin-right: 5px;
+    }
+
+    ul{
+        padding-left: 0px;
+        align-items: baseline;
+        justify-content: space-evenly;
+    }
+
+    li a{
+        font-size: 10px;
+        text-align: start;
+    }
+    
+}

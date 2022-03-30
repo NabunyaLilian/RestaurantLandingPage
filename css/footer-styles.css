@@ -1,0 +1,88 @@
+/* Desktop styles */
+
+footer{
+    background-color: #050706;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.dash-line{
+    margin-top: 40px;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact-container > div{
+    padding: 0px 70px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact > p{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-section{
+    display: flex;
+    align-content: center;
+}
+
+
+
+/* Tablet styles */
+@media only screen and (max-width: 768px){
+    .dash-line{
+        margin-left: 20px ;
+        margin-right: 20px;
+    }
+    .dash-line > img{
+       display: block;
+       margin: auto;
+       height: 12px;
+       background-repeat: repeat-x;
+    }
+
+    .contact-container{
+        flex-direction: column;
+    }
+
+    .contact{
+        margin-top: 0px;
+    }
+
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 600px){
+    .dash-line{
+        margin-left: 20px ;
+        margin-right: 20px;
+    }
+
+    .contact-container{
+        flex-direction: column;
+    }
+
+    .contact{
+        margin-top: 0px;
+    }
+}

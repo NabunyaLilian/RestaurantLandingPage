@@ -1,0 +1,103 @@
+/* Desktop styles */
+
+.offer-section{
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/bg-five.jpg);
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50% ;
+}
+
+.offer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    
+}
+
+.menu{
+    display: flex;
+    flex-direction:column;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 30px;
+}
+
+.menu >img{
+    width: 80px; 
+    height:70px; 
+    margin-top: 50px;
+}
+
+.download-btn{
+    display: block;
+    width: 300px;
+    background-color: #DE4A30;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.download-btn >p{
+    font-family: 'merriweather', serif;
+}
+
+
+
+/* Tablet styles */
+
+@media only screen and (max-width:768px){
+    .offer-section{
+        background-position-x: 50%;
+        background-position-y: 50% ; 
+        height: auto;
+    }
+
+    .offer{
+        flex-direction: column;
+        padding-bottom: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .download-btn{
+        margin-bottom: 220px;
+    }
+
+}
+
+
+/* Mobile styles */
+
+@media only screen and (max-width:600px){
+    .offer-section{
+        background-position-x: 50%;
+        background-position-y: 50% ; 
+        height: auto;
+    }
+
+    .offer{
+        flex-direction: column;
+        padding-bottom: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu{
+        justify-content: center;
+        width: 70%;
+        padding: 10px;
+    }
+
+    .download-btn{
+        width: 250px;
+        margin-bottom: 250px;
+    }
+}
