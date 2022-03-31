@@ -5,4 +5,4 @@
 Create a platform where people can reach us and make orders at their convenience.
 
 ## Github Link
-Visit [https://nabunyalilian.github.io/FoodTemplate/](https://nabunyalilian.github.io/FoodTemplate/) to see the site in action.
+Visit [https://nabunyalilian.github.io/RestaurantLandingPage/](https://nabunyalilian.github.io/RestaurantLandingPage/) to see the site in action.
